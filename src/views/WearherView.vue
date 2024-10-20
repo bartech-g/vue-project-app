@@ -43,7 +43,7 @@ const fetchWeather = async () => {
   }
 
   try {
-    const response = await fetch(`http://app1.bartechlabs.com/api/weather/${city.value}`)
+    const response = await fetch(`https://app1.bartechlabs.com/api/weather/${city.value}`)
     if (!response.ok) {
       throw new Error('City not found')
     }
